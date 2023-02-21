@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import axios from "axios";
 
+
 export const useFetch = (username) => {
-  const ACCESS_TOKEN = ''
+  const ACCESS_TOKEN = import.meta.env.VITE_GITHUB_TOKEN
   const [ user, setUser ] = useState({
     data: {},
     isLoading: true,
